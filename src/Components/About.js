@@ -9,7 +9,7 @@ const About = () => {
         As a passionate{" "}
         <span style={styles.highlight}>Full Stack Developer</span>, I specialize
         in building dynamic and responsive web applications that provide
-        seamless user experiences. With a solid foundation in both 
+        seamless user experiences. With a solid foundation in both
         <span style={styles.sectionHighlight}>Front-end</span> and
         <span style={styles.sectionHighlight}>Back-end</span> technologies, I
         thrive on turning complex problems into elegant solutions.
@@ -39,10 +39,8 @@ const About = () => {
           management.
         </li>
         <li>
-          <strong>Deployment & CI/CD:</strong> Experience with cloud platforms
-          like AWS for application deployment. Knowledgeable in setting up
-          Continuous Integration/Continuous Deployment (CI/CD) pipelines to
-          automate testing and deployment processes.
+          <strong>Deployment :</strong> Experience with platforms
+          such as Render and Netlify.
         </li>
       </ul>
 
