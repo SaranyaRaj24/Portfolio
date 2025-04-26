@@ -10,6 +10,7 @@ import Skills from "./Components/Skills"
 import Experience from "./Components/Experience";
 import Certificate from "./Components/Certificate";
 
+
 const App = () => {
   return (
     <div>

@@ -6,7 +6,9 @@ const Experience = () => {
       <h2 style={styles.heading}>Professional Experience</h2>
 
       <div style={styles.experienceSection}>
-        <h3 style={styles.companyName}>I-Bacus Tech, Coimbatore</h3>
+        <h3 style={styles.companyName}>
+          I-Bacus Tech Solutions Private Ltd, Coimbatore
+        </h3>
         <p style={styles.duration}>May 2024 – Present</p>
 
         <p style={styles.text}>
@@ -55,6 +57,12 @@ const Experience = () => {
           <li>
             <strong>RB Chains:</strong> Created custom solutions for supply
             chain management, enhancing operational efficiency.
+          </li>
+          <li>
+            <strong>Jeeva Gold Coins:</strong>As an independent project, I
+            developed the Jeeva Gold Project, a comprehensive system designed to
+            streamline and optimize the jewelry manufacturing and sales process
+            for goldsmiths.
           </li>
         </ul>
 

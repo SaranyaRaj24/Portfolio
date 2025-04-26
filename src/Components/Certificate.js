@@ -1,6 +1,8 @@
 
 import React from "react";
-import { SiUdemy } from "react-icons/si"; 
+import { SiUdemy } from "react-icons/si";
+import SimplilearnLogo from "../Assets/simplilearn.png"; 
+import MernCertificate from "../Assets/certificate.png"; 
 
 const Certificate = () => {
   return (
@@ -8,11 +10,9 @@ const Certificate = () => {
       <h2 style={styles.heading}>My Certifications</h2>
 
       <div style={styles.certificateCard}>
-      
         <div style={styles.logoContainer}>
           <SiUdemy style={styles.logo} />
         </div>
-
         <div style={styles.details}>
           <h3 style={styles.title}>Full Stack Development Course</h3>
           <p style={styles.platform}>Issued by: Udemy</p>
@@ -20,9 +20,34 @@ const Certificate = () => {
           <p style={styles.credential}>
             Credential ID: <span style={styles.credentialId}>0004</span>
           </p>
-
           <a
             href="https://www.udemy.com/certificate/UC-aa829f78-c68a-43e3-a604-8f80a56cbef5/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={styles.button}
+          >
+            View Certificate
+          </a>
+        </div>
+      </div>
+
+      <div style={styles.certificateCard}>
+        <div style={styles.logoContainer}>
+          <img
+            src={SimplilearnLogo}
+            alt="Simplilearn Logo"
+            style={styles.imageLogo}
+          />
+        </div>
+        <div style={styles.details}>
+          <h3 style={styles.title}>Fundamentals of MERN Stack</h3>
+          <p style={styles.platform}>Issued by: Simplilearn</p>
+          <p style={styles.date}>Date of Completion: April 2025</p>
+          <p style={styles.credential}>
+            Credential ID: <span style={styles.credentialId}>8171737</span>
+          </p>
+          <a
+            href={MernCertificate}
             target="_blank"
             rel="noopener noreferrer"
             style={styles.button}
@@ -34,7 +59,6 @@ const Certificate = () => {
     </section>
   );
 };
-
 
 const styles = {
   container: {
@@ -53,9 +77,8 @@ const styles = {
   heading: {
     fontSize: "2.5rem",
     color: "#64ffda",
-    marginBottom: "13rem",
+    marginBottom: "3rem",
   },
-
   certificateCard: {
     display: "flex",
     alignItems: "center",
@@ -65,16 +88,24 @@ const styles = {
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
     maxWidth: "700px",
     width: "100%",
-    marginBottom: "10rem",
-    marginTop: "-80px",
+    marginBottom: "2rem", 
   },
-
   logoContainer: {
     marginRight: "20px",
+    width: "80px",
+    height: "80px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
   logo: {
     fontSize: "5rem",
-    color: "#A435F0",
+    color: "#A435F0", 
+  },
+  imageLogo: {
+    width: "100%",
+    height: "100%",
+    objectFit: "contain",
   },
   details: {
     flex: 1,
@@ -112,6 +143,9 @@ const styles = {
     textDecoration: "none",
     fontWeight: "bold",
     transition: "background-color 0.3s ease",
+    "&:hover": {
+      backgroundColor: "#52d1b8",
+    },
   },
 };
 
